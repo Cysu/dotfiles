@@ -105,10 +105,8 @@ URxvt*highlightTextColor: #E7EBED
 ! URxvt*borderColor: colour
 
 ! Select the fonts to be used. This is a comma separated list of font names that are checked in order when trying to find glyphs for characters. The first font defines the cell size for characters;
-!URxvt*font: xft:inconsolata:size=13
-!URxvt*boldFont: xft:inconsolata:bold:size=13
-URxvt*font: xft:roboto mono:size=11
-URxvt*boldFont: xft:roboto mono:bold:size=11
+URxvt*font: xft:Hack:size=11
+URxvt*boldFont: xft:Hack:bold:size=11
 
 ! URxvt*italicFont: fontlist
 
@@ -189,6 +187,7 @@ URxvt*saveLines: 65535
 
 ! Specifies number of lines (pixel height) to insert between each row of the display [default 0]; option -lsp.
 URxvt*lineSpace: 8
+URxvt*letterSpace: 0
 
 ! True: handle Meta (Alt) + keypress to set the 8th bit. False: handle Meta (Alt) + keypress as an escape prefix [default].
 ! URxvt*meta8: boolean
