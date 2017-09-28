@@ -8,7 +8,7 @@ Plugin 'rking/ag.vim'                          " silver search
 Plugin 'kien/ctrlp.vim'                        " fuzzy search
 Plugin 'vim-airline/vim-airline'               " status bar
 Plugin 'vim-airline/vim-airline-themes'
-Plugin 'vim-syntastic/syntastic'               " syntax checking
+Plugin 'vim-syntastic/syntastic'               " syntax check
 Plugin 'scrooloose/nerdtree'                   " file explorer
 Plugin 'Shougo/neocomplete.vim'                " autocomplete
 Plugin 'tpope/vim-surround'                    " quoting / parenthesizing
@@ -90,12 +90,13 @@ let g:airline#extensions#tabline#enabled = 1
 " }}}
 
 " Syntastic {{{
+map <C-x> :SyntasticCheck<CR>
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 0
 " }}}
 
