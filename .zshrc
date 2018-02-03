@@ -74,7 +74,6 @@ plugins=(
   python
   tmux
   vundle
-  zsh-history-substring-search
 )
 
 source $ZSH/oh-my-zsh.sh
