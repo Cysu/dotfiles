@@ -76,7 +76,7 @@ plugins=(
   vi-mode
   vundle
   zsh-autosuggestions
-  zsh-syntax-highlighting
+  #zsh-syntax-highlighting
   history-substring-search
 )
 
@@ -110,3 +110,16 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+#
+# Vi-mode
+export KEYTIMEOUT=1
+
+bindkey -M viins "${terminfo[khome]}" beginning-of-line  # Home key 
+bindkey -M viins "${terminfo[kend]}" end-of-line  # End key 
+bindkey -M viins "${terminfo[kdch1]}" delete-char  # Del key 
+bindkey -M viins "^?" backward-delete-char  # Backspace key 
+
+bindkey -M vicmd "${terminfo[khome]}" beginning-of-line  # Home key 
+bindkey -M vicmd "${terminfo[kend]}" end-of-line  # End key 
+bindkey -M vicmd "${terminfo[kdch1]}" delete-char  # Del key 
+bindkey -M vicmd "^?" backward-delete-char  # Backspace key 
