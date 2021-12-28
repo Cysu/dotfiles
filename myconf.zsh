@@ -1,3 +1,5 @@
+xset r rate 200 60
+
 alias dush="du -sm * | sort -h"
 alias pa="ps aux | grep"
 alias nv='watch -n 0.1 nvidia-smi'
@@ -5,7 +7,6 @@ alias path='readlink -f'
 alias cs='find . -type f | xargs grep'
 
 export PYTHONPATH=".:$PYTHONPATH"
-export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 export HISTFILESIZE=1000000000
 export HISTSIZE=1000000000
 
