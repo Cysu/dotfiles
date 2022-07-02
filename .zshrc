@@ -83,8 +83,8 @@ plugins=(
     colored-man-pages
     common-aliases
     copybuffer
-    copydir
     copyfile
+    copypath
     extract
     history-substring-search
     git
